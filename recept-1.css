@@ -1,0 +1,731 @@
+html {
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.headerContainer {
+    height: 100px;
+    border-bottom: solid 0px rgb(102 96 96);
+    box-shadow: 0px 0px 20px rgb(42 40 40 / 30%);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0;
+}
+
+.headerLinksMainContainer {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 30px;
+}
+
+.headerLogoContainer {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logoKochwelt {
+    height: 50px;
+}
+
+.headerLinksContainer {
+    display: flex;
+    gap: 28px;
+}
+
+.headerLinksContainer a {
+    font-size: 14px;
+    color: rgb(64, 59, 59);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.headerLinksContainer a:hover {
+    border-bottom: solid 2px;
+    border-color: #008001;
+}
+
+.headerLinksContainer a:hover {
+    color: green;
+}
+
+#menuToggleButton {
+    font-weight: 900;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.sideMenuShow {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    width: 138px;
+    border-radius: 10px;
+    line-height: 20px;
+    height: auto;
+    padding: 10px 0;
+    background-color: green;
+    transition: all 0.5s;
+}
+
+.sideMenuHide {
+    transform: translateX(100%);
+    transition: all 0.5s;
+}
+
+.sideMenuShow a {
+    text-decoration: none;
+    color: white;
+}
+
+.sideMenuShow ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sideMenuShow li a:hover {
+    border-bottom: solid 2px;
+    border-color: #008001;
+}
+
+#buttons {
+    border: none;
+    background-color: #008001;
+    color: white;
+    font-size: 12px;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #44b444;
+}
+
+.fullscreen-Container {
+    place-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.main-C {
+    max-width: 1415px;
+    width: 100%;
+    margin: 0;
+}
+
+.receptContainer {
+
+    padding-inline: 120px;
+    padding-top: 48px;
+
+}
+
+h1 {
+    padding: 0;
+    padding-bottom: 20px;
+    margin: 0;
+    margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+}
+
+h2 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-bottom: 0px;
+    padding-top: 48px;
+}
+
+h3 {
+
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-top: 48px;
+    padding-bottom: 20px;
+
+}
+
+#imgFood {
+    background-image: url('./assets/img/R1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 324px;
+    min-height: 100px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+#iconsContainer {
+    width: 100%;
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    height: 15px;
+    width: auto;
+    padding: 6px 8px;
+    border-radius: 8px;
+    background-color: rgb(228, 230, 231);
+    margin-top: 20px;
+}
+
+.icons img {
+    height: 12px;
+    width: auto;
+}
+
+#borderLine {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(228, 230, 231);
+    margin-bottom: 20px;
+}
+
+.labelMainContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.labelContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#input {
+    width: 60px;
+    margin: 0;
+    border: solid 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-color: rgb(228, 230, 231);
+    padding: 5px 30px 5px 30px;
+    font-size: 12px;
+}
+
+#portionSelect {
+    width: 97px;
+    margin: 0;
+    border: solid 1px;
+    border-color: rgb(228, 230, 231);
+    padding: 5px 30px 4px 30px;
+    font-size: 12px;
+}
+
+.inputNeededGrey {
+    border: none;
+    width: 70px;
+    background-color: rgb(228, 230, 231);
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.inputNeededWhite {
+    border: none;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+#buttonPortion {
+    margin: 0;
+    border-left: solid 1px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: rgb(228, 230, 231);
+    padding: 5px 30px;
+    font-size: 12px;
+    padding-block: 6px;
+    padding-inline: 22px;
+    border: none;
+    background-color: #008001;
+    cursor: pointer;
+    color: white;
+}
+
+#buttonPortion:active {
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#buttonPortion2 {
+    margin: 0;
+    border-left: solid 1px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: rgb(228, 230, 231);
+    padding: 5px 30px;
+    font-size: 12px;
+    padding-block: 6px;
+    padding-inline: 22px;
+    border: none;
+    background-color: #008001;
+    cursor: pointer;
+    color: white;
+}
+
+.ingredientsGrey {
+    display: flex;
+    align-items: center;
+    background-color: rgb(228, 230, 231);
+    border-radius: 10px;
+    height: 60px;
+    padding-inline: 20px;
+}
+
+.ingredientsWhite {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding-inline: 20px;
+}
+
+#accessoriesContainer {
+    display: flex;
+    width: 100%;
+}
+
+.accessories {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    height: 15px;
+    width: auto;
+    padding: 6px 8px;
+    border-radius: 8px;
+    background-color: rgb(228, 230, 231);
+    margin-top: 20px;
+}
+
+.accessories img {
+    height: 12px;
+    width: auto;
+}
+
+.preparation {
+    display: flex;
+
+}
+
+.ol {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 20px;
+    padding-top: 20px;
+}
+
+.creatorNameContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 98px;
+}
+
+.creatorNameContainer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.creatorNameContainer p {
+    font-size: 22px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+footer {
+
+    background-color: rgb(64, 59, 59);
+    height: 168px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0;
+
+
+}
+
+.logo-text {
+    height: 80px;
+
+}
+
+.logo {
+    display: none;
+}
+
+.footer_1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-inline: 30px;
+    padding-block: 22px;
+    box-sizing: border-box;
+}
+
+.socialmedia-logo {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.socialmedia-img {
+    width: 120px;
+    height: 120px;
+}
+
+
+
+/*Tablet*/
+
+@media(max-width:882px) {
+
+    #logoKochwelt {
+        height: 48px;
+    }
+
+    .headerLinksContainer a {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 800px) {
+
+    h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .receptContainer {
+
+        padding-inline: 30px;
+        padding-top: 24px;
+
+    }
+
+
+    .socialmedia-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-text {
+        height: 60px;
+
+    }
+}
+
+@media(max-width:789px) {
+
+    #input {
+        display: none;
+    }
+
+    #buttonPortion2 {
+        display: none;
+    }
+
+    .main-C {
+        max-width: 715px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .headerLinksMainContainer {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        box-sizing: border-box;
+        padding-inline: 30px;
+    }
+
+
+    .headerLinksContainer a {
+        display: none;
+    }
+}
+
+@media (min-width: 789px) {
+    #sideMenu {
+        display: none;
+    }
+
+    #menuToggleButton {
+        display: none;
+    }
+
+    #portionSelect {
+        display: none;
+    }
+
+    #buttonPortion {
+        display: none;
+    }
+
+}
+
+@media(max-width:705px) {
+
+    .main-C {
+        max-width: 658px;
+        width: 100%;
+        margin: 0;
+    }
+
+
+    h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+
+    .creatorNameContainer {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 31px;
+    }
+
+    .creatorNameContainer img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .creatorNameContainer p {
+        font-size: 16px;
+    }
+}
+
+
+/*Mobil*/
+
+
+
+@media (max-width: 660px) {
+
+
+    .main-C {
+        max-width: 600px;
+        width: 100%;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .logo-text {
+        height: 42px;
+    }
+
+    .socialmedia-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer_1 {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+
+}
+
+@media(max-width: 620px) {
+
+
+    body {
+        font-size: 14px;
+    }
+
+    .portionSelectWidth {
+        width: 96px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+
+    #iconsContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #iconsContainer {
+        width: 100%;
+        display: flex;
+        margin-bottom: 40px
+    }
+
+    #menuToggleButton {
+        display: block;
+    }
+
+    .labelMainContainer {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .labelContainer {
+        flex-direction: column;
+    }
+
+    #accessoriesContainer {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 28px;
+    }
+
+}
+
+@media(max-width:554px) {
+
+    .main-C {
+        max-width: 454px;
+        width: 100%;
+        margin: 0;
+    }
+
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .receptContainer {
+
+        padding-inline: 30px;
+        padding-top: 24px;
+
+    }
+
+    .sideMenuShow ul {
+
+        font-size: 14px;
+    }
+
+    .sideMenuShow {
+        width: 138px;
+    }
+
+    .logo-text {
+        height: 42px;
+    }
+
+    .socialmedia-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer_1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 26px;
+    }
+}
+
+@media(max-width:454px) {
+
+    .main-C {
+        max-width: 400px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .receptContainer {
+        padding-inline: 40px;
+        padding-top: 24px;
+    }
+
+    #imgFood {
+        background-image: url(./assets/img/R1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        min-height: 100px;
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+
+    #logoKochwelt {
+        height: 36px;
+    }
+}
+
+@media(max-width:360px) {
+
+    .main-C {
+        max-width: 350px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .headerLinksMainContainer {
+
+        padding-inline: 15px;
+    }
+
+    .receptContainer {
+        padding-inline: 30px;
+        padding-top: 24px;
+    }
+
+    h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+
+}

@@ -1,0 +1,866 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+.headerContainer {
+    height: 100px;
+    border-bottom: solid 0px rgb(102 96 96);
+    box-shadow: 0px 0px 20px rgb(42 40 40 / 30%);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0;
+}
+
+.headerLinksMainContainer {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 30px;
+}
+
+.headerLogoContainer {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logoKochwelt {
+    height: 50px;
+}
+
+.headerLinksContainer {
+    display: flex;
+    gap: 28px;
+}
+
+.headerLinksContainer a {
+    font-size: 14px;
+    color: rgb(64, 59, 59);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.headerLinksContainer a:hover {
+    border-bottom: solid 2px;
+    border-color: #008001;
+}
+
+.headerLinksContainer a:hover {
+    color: green;
+}
+
+#menuToggleButton {
+    font-weight: 900;
+    padding: 0 10px;
+    margin: 0;
+}
+
+.sideMenuShow {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    width: 138px;
+    border-radius: 10px;
+    line-height: 20px;
+    height: auto;
+    padding: 10px 0;
+    background-color: green;
+    transition: all 0.5s;
+}
+
+.sideMenuHide {
+    transform: translateX(100%);
+    transition: all 0.5s;
+}
+
+.sideMenuShow a {
+    text-decoration: none;
+    color: white;
+}
+
+.sideMenuShow ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sideMenuShow li a:hover {
+    border-bottom: solid 2px;
+    border-color: #008001;
+}
+
+.fullscreen-Container {
+    place-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.main-C {
+    max-width: 1210px;
+    width: 100%;
+    margin: 0;
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    padding-block: 48px;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+.aot {
+    background-image: url('./assets/img/R1.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+    width: 500px;
+    height: 350px;
+    min-width: 270px;
+    max-height: 270px;
+
+
+}
+
+.boldtitle {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 18px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.description {
+    font-family: "Raleway", sans-serif;
+    color: rgb(64, 59, 59);
+    font-size: 15px;
+    padding-bottom: 120px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.button {
+    border: none;
+    background-color: #008001;
+    color: white;
+    font-size: 12px;
+    padding: 5px 28px;
+    cursor: pointer;
+
+}
+
+button:active {
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #44b444;
+}
+
+.section-Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-inline: 30px;
+    box-sizing: border-box;
+}
+
+.section2 {
+
+    background-color: rgb(239, 239, 239);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0;
+
+}
+
+.section_R {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.section_t {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding-block: 28px;
+    margin-block-start: 0.0em;
+    margin-block-end: 0.0em;
+}
+
+.text {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.section2images {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-bottom: 48px;
+    box-sizing: border-box;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 48px;
+    box-sizing: border-box;
+
+}
+
+.p_Wok {
+    color: rgb(64, 59, 59);
+    font-size: 15px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+
+
+}
+
+.wok {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.section_wok {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+footer {
+
+    background-color: rgb(64, 59, 59);
+    height: 168px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0;
+
+
+}
+
+.logo-text {
+    height: 80px;
+
+}
+
+.logo {
+    display: none;
+}
+
+.footer_1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-inline: 30px;
+    padding-block: 22px;
+    box-sizing: border-box;
+}
+
+.socialmedia-logo {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.socialmedia-img {
+    width: 120px;
+    height: 120px;
+}
+
+/*Tablet*/
+
+@media(max-width:1669px) {
+
+    .main-C {
+        max-width: 1148px;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media(max-width:1575px) {
+
+    .main-C {
+        max-width: 1077px;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media(max-width:1444px) {
+
+    .main-C {
+        max-width: 978px;
+        width: 100%;
+        margin: 0;
+    }
+
+
+}
+
+@media (max-width:1286px) {
+
+    .main-C {
+        max-width: 964px;
+        width: 100%;
+        margin: 0;
+    }
+
+
+}
+
+@media(max-width:1066px) {
+
+    .main-C {
+        max-width: 846px;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 945px) {
+    .section1 {
+        gap: 22px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .boldtitle {
+        font-size: 20px;
+        padding-bottom: 18px;
+        margin: 0;
+    }
+
+    .description {
+        font-size: 14px;
+        padding-bottom: 28px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 909px) {
+    .main-C {
+        max-width: 777px;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media(max-width:882px) {
+
+
+    body {
+        font-size: 14px;
+    }
+
+    #logoKochwelt {
+        height: 48px;
+    }
+
+
+
+    .headerLinksContainer a {
+        font-size: 14px;
+    }
+
+    .section2images {
+
+        display: flex;
+        align-items: center;
+        gap: 68px;
+        padding-bottom: 48px;
+
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-block-start: 0.0em;
+        margin-block-end: 0.0em;
+        padding-block: 5px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        padding-block: 3px;
+    }
+
+    p {
+        padding-block: 5px;
+    }
+
+    .section_wok {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 877px) {
+
+    body {
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+
+    .headerLinksMainContainer {
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-inline: 30px;
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    .aot {
+        background-image: url(./assets/img/R1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 324px;
+        min-height: 100px;
+        width: 84%;
+        border-radius: 12px;
+    }
+
+    .section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-inline: 30px;
+        box-sizing: border-box;
+    }
+
+    .text-1 {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+
+
+
+    }
+
+
+    .boldtitle {
+        font-size: 26px;
+        padding-bottom: 18px;
+        margin: 0;
+    }
+
+    .description {
+        font-size: 14px;
+        padding-bottom: 32px;
+        margin: 0;
+    }
+
+    .section_t {
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 877px) {
+
+    .section2images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding-inline: 58px;
+        padding-bottom: 28px;
+    }
+
+    .text {
+        font-size: 22px;
+        padding-top: 4px;
+    }
+}
+
+@media(max-width:877px) {
+
+    #input {
+        display: none;
+    }
+
+    #buttonPortion2 {
+        display: none;
+    }
+
+    .headerLinksContainer a {
+        display: none;
+    }
+}
+
+@media (min-width: 877px) {
+    #sideMenu {
+        display: none;
+    }
+
+    #menuToggleButton {
+        display: none;
+    }
+
+    #portionSelect {
+        display: none;
+    }
+
+    #buttonPortion {
+        display: none;
+    }
+
+}
+
+@media(max-width:820px) {
+
+    .logo-text {
+        height: 58px;
+    }
+
+    .socialmedia-img {
+        width: 106px;
+        height: 106px;
+    }
+}
+
+
+
+
+/*Mobil*/
+
+
+
+
+
+
+@media(max-width:785px) {
+
+
+    .main-C {
+        max-width: 636px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .aot {
+        background-image: url(./assets/img/R1.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 324px;
+        min-height: 100px;
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .logo-text {
+        height: 48px;
+    }
+
+    .socialmedia-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .logo-text {
+        height: 58px;
+
+    }
+}
+
+@media (max-width: 660px) {
+    body {
+        font-size: 12px;
+        overflow-x: hidden;
+    }
+
+    .sideMenuShow ul {
+
+        font-size: 14px;
+    }
+
+    .sideMenuShow {
+        width: 138px;
+    }
+
+    .aot {
+        width: 100%;
+        height: 180px;
+        min-height: 50px;
+    }
+
+    .section1 {
+        gap: 12px;
+        padding-inline: 48px;
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
+
+    .boldtitle {
+        font-size: 22px;
+        padding-bottom: 12px;
+        margin: 0;
+    }
+
+    .description {
+        font-size: 14px;
+        padding-bottom: 24px;
+        margin: 0;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+    .section_t {
+        font-size: 20px;
+    }
+
+    .section2images {
+
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        padding-bottom: 48px;
+
+    }
+
+    .text {
+        font-size: 22px;
+    }
+
+    .section3 {
+        padding-inline: 48px;
+        padding-bottom: 28px;
+    }
+
+    .section_R {
+        height: 150px;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .section_wok {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .wok {
+        object-fit: cover;
+        height: 150px;
+        width: 54%;
+        border-radius: 10px;
+    }
+
+    .footer_1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 26px;
+    }
+
+    .p_Wok {
+        font-size: 14px;
+    }
+
+    .logo-text {
+        height: 42px;
+    }
+
+    .socialmedia-img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media(max-width:450px) {
+
+    #logoKochwelt {
+        height: 36px;
+
+    }
+
+    .section2images {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        padding-bottom: 48px;
+    }
+
+    .wok {
+        object-fit: cover;
+        height: 150px;
+        width: 72%;
+        border-radius: 10px;
+    }
+
+}
+
+@media(max-width:390px) {
+    .wok {
+        object-fit: cover;
+        height: 150px;
+        width: 82%;
+        border-radius: 10px;
+    }
+
+}
+
+@media (max-width: 376px) {
+    body {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+
+    #logoKochwelt {
+        height: 38px;
+    }
+
+    .main-C {
+        max-width: 372px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .aot {
+        width: 86%;
+        height: 180px;
+        min-height: 50px;
+    }
+
+    .section1 {
+        gap: 12px;
+        padding-inline: 30px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    .text-1 {
+        text-align: center;
+    }
+
+    .boldtitle {
+        font-size: 22px;
+        padding-bottom: 12px;
+        margin: 0;
+    }
+
+    .description {
+        font-size: 14px;
+        padding-bottom: 12px;
+        margin: 0;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+
+    .section_t {
+        font-size: 22px;
+    }
+
+    .section2images {
+        padding-inline: 30px;
+        padding-bottom: 14px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .section3 {
+        padding-inline: 30px;
+        padding-bottom: 14px;
+    }
+
+    .section_R {
+        height: 100px;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .section_wok {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .wok {
+        height: 100px;
+        width: 58%;
+        border-radius: 10px;
+    }
+
+    .p_Wok {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width:256px) {
+    .main-C {
+        max-width: 200px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .wok {
+        height: 100px;
+        width: 120%;
+        border-radius: 10px;
+
+    }
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept Seite</title>
+    <link rel="stylesheet" href="recept-1.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&family=Viga&display=swap"
+        rel="stylesheet">
+    <script src="./recept-1.js"></script>
+
+</head>
+
+<body>
+    <div class="fullscreen-Container">
+        <div class="main-C">
+            <div class="headerContainer">
+
+
+                <div class="headerLinksMainContainer">
+                    <div class="headerLogoContainer">
+                        <a href="./index.html">
+                            <img id="logoKochwelt" src="./assets/img/logo.png" alt="Logo von Kochwelt">
+                    </div>
+                    <div class="headerLinksContainer">
+                        <a href="./index.html">Start</a>
+                        <a href="./recept-1.html">Rezept des Tages</a>
+                        <a href="./contact.html">Kontakt</a>
+                        <a href="./impressum.html">Impressum</a>
+                    </div>
+                    <button id="menuToggleButton" onclick="toggleMenu()">...</button>
+                </div>
+            </div>
+
+
+
+            <nav id="sideMenu" class="sideMenuShow sideMenuHide">
+                <ul>
+                    <li><a href="./index.html">Start</a></li>
+                    <li><a href="./recept-1.html">Rezept des Tages</a></li>
+                    <li><a href="./contact.html">Kontakt</a></li>
+                    <li><a href="./impressum.html">Impressum</a></li>
+                </ul>
+            </nav>
+
+            <div class="receptContainer">
+                <h1>Hähnchenbrustfilet im Gemüsepäckchen</h1>
+                <div id="imgFood"></div>
+                <div id="iconsContainer">
+                    <div class="icons"><img src="./assets/icons/clock-regular.svg" alt="Uhrensymbol">
+                        <p>&nbsp;&nbsp;30 Min.</p>
+                    </div>
+                    <div class="icons"><img src="./assets/icons/brain-solid.svg" alt="Gehirnsymbol">
+                        <p>&nbsp;&nbsp;simpel</p>
+                    </div>
+                    <div class="icons"><img src="./assets/icons/calendar-alt-regular.svg" alt="Kalendersymbol">
+                        <p>&nbsp;&nbsp;08.12.2024</p>
+                    </div>
+                </div>
+                <div id="borderLine">
+                </div>
+
+                <div class="labelMainContainer">
+                    <div class="labelContainer">
+                        <label for="input">Zutaten für &nbsp;</label>
+
+
+                        <input type="number" id="input" max="20" min="1" value="1" required>
+
+                        <select id="portionSelect" class="portionSelectWidth" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                        </select>
+
+
+                        <button id="buttonPortion2" onclick="equalIngredients2()">Portionen</button>
+
+                        <button id="buttonPortion" onclick="equalIngredients()">Portionen</button>
+                    </div>
+                </div>
+                <div class="ingredientsGrey"><input class="inputNeededGrey" type="number" value="150.0"
+                        readonly></input>
+                    Hähnchenbrustfilet</div>
+                <div class="ingredientsWhite"><input class="inputNeededWhite" type="number" value="1" readonly></input>
+                    kleine rote Zwiebel</div>
+                <div class="ingredientsGrey"><input class="inputNeededGrey" type="number" value="1" readonly></input>
+                    Zucchini
+                </div>
+                <div class="ingredientsWhite"><input class="inputNeededWhite" type="number" value="10.0"
+                        readonly></input>
+                    Cherrytomate(n)</div>
+                <div class="ingredientsGrey"><input class="inputNeededGrey" type="number" value="10.0" readonly></input>
+                    Knoblauchzehe (nach Geschmack) </div>
+                <div class="ingredientsWhite"><input class="inputNeededWhite" type="number" value="1" readonly></input>
+                    kleine rote Zwiebel</div>
+                <div class="ingredientsGrey"><input class="inputNeededGrey" type="number" value="10.0" readonly></input>
+                    Frische Kräuter</div>
+
+
+                <div class="ingredientsWhite"><input class="inputNeededWhite" type="number" value="10.0"
+                        readonly></input>
+                    Olivenöl</div>
+
+                <div class="ingredientsGrey"><input class="inputNeededGrey" type="number" value="0.5" readonly></input>
+                    Salz
+                    &
+                    Pfeffer (nach Geschmack)</div>
+
+
+                <h2>Zubereitung</h2>
+
+                <div id="accessoriesContainer">
+                    <div class="accessories">
+                        <img src="./assets/icons/clock-regular.svg" alt="Uhrensymbol">
+                        <p>&nbsp;&nbsp;ca. 30 Minuten</p>
+                    </div>
+                    <div class="accessories">
+                        <img src="./assets/icons/clock-regular.svg" alt="Uhrensymbol">
+                        <p>&nbsp;&nbsp;Gesamtzeitzeit ca. 40 Minuten</p>
+                    </div>
+                </div>
+                <div class="preparation">
+                    <ol class="ol">
+                        <li> Hähnchenbrustfilets abgedeckt im Kühlschrank 20 Min auftauen lassen.</li><br>
+                        <li> Das Grillgemüse ebenfalls abgedeckt auftauen lassen.</li><br>
+                        <li> Die Zwiebeln in grobe Würfel schneiden. Die Cherrytomaten waschen und halbieren. Den
+                            Fetakäse
+                            in
+                            Würfel schneiden.</li><br>
+                        <li> Für jedes Päckchen je 1 Stück Alufolie oder Backpapier vorbereiten. Das Gemüse darauf
+                            verteilen
+                            und
+                            den Feta darüber bröseln.</li><br>
+                        <li> Den Grill vorheizen. Die Hähnchenbrustfilets von jeder Seit kurz scharf angrillen und
+                            anschließend
+                            auf das Gemüse in den Päckchen legen.</li><br>
+                        <li>Die Päckchen verschließen und für 10 Minuten am Rande der Glut auf den Grill legen.</li>
+
+                    </ol>
+                </div>
+                <h3>Rezept erstellt von</h3>
+                <div class="creatorNameContainer">
+                    <img src="./assets/img/Sami.jpg" alt="Bild vom Ersteller">
+
+                    <p>Sami Al Meere</p>
+                </div>
+            </div>
+    <footer>
+
+
+        <div class="footer_1">
+            <div class="logo-text">
+                <img class="logo-text" src="./assets/img/logo.png" alt="logo_text">
+            </div>
+
+
+            <div class="socialmedia-logo">
+
+                <a target="_blank" href="https://www.facebook.com/">
+                    <img class="socialmedia-img" src="./assets/icons/facebook-icon.webp" alt="Facebook">
+                </a>
+
+                <a target="_blank" href="https://www.instagram.com/">
+                    <img class="socialmedia-img" src="./assets/icons/instagram-icon..webp" alt="Instagram">
+                </a>
+
+                <a target="_blank" href="https://x.com/">
+                    <img class="socialmedia-img" src="./assets/icons/x-share-icon.webp" alt="X">
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+</div>
+</body>
+
+</html>
